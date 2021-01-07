@@ -31,8 +31,11 @@ def calculate case_start, case_end, shift_code, letter_code
     "ERROR"
   end
 end
-lowercase_start = "a".ord
-lowercase_end = "z".ord
-uppercase_start = "A".ord
-uppercase_end = "Z".ord
-p cipher("Aa Zz", -1)
+
+puts "Input a string"
+input = gets.chomp
+
+puts "Input a shift"
+shift = gets.chomp
+
+p cipher(input, shift)
